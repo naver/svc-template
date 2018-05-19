@@ -6,7 +6,7 @@
     to="${escapeXmlAttribute(srcOut)}/${className}Fragment.kt" />
     
     <instantiate from="src/app_package/classes/CT.kt.ftl"
-    to="${escapeXmlAttribute(srcOut)}/${className}Controller.kt" />
+    to="${escapeXmlAttribute(srcOut)}/${className}CT.kt" />
     
     <instantiate from="src/app_package/classes/Views.kt.ftl"
     to="${escapeXmlAttribute(srcOut)}/${className}Views.kt" />

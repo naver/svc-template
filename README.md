@@ -7,7 +7,7 @@
 
 ## How to use
 
-1. new -> SVC PATTERN -> select SVC Activity /SVC Activity with Usecase /SVC Fragment /SVC Fragment with Usecase
+1. new -> SVC -> select SVC Activity /SVC Activity with Usecase /SVC Fragment /SVC Fragment with Usecase
 2. write screen name
 3. finish
 
