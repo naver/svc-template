@@ -8,7 +8,7 @@ import com.naver.android.svc.core.views.SvcBaseViews
 class ${className}Views(owner: ${className}Fragment): SvcBaseViews<${className}Fragment>(owner) {
 
     override val layoutResId: Int
-            get() = R.layout.${activityLayoutName}
+            get() = R.layout.${fragmentLayoutName}
 
     override fun onCreated() {
     }

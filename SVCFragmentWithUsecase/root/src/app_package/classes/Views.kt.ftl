@@ -8,7 +8,7 @@ import com.naver.android.svc.core.views.UseCaseViews
 class ${className}Views(owner: ${className}Fragment): UseCaseViews<${className}Fragment, ${className}UseCase>(owner) {
 
     override val layoutResId: Int
-            get() = R.layout.${activityLayoutName}
+            get() = R.layout.${fragmentLayoutName}
 
     override fun onCreated() {
     }
