@@ -1,0 +1,42 @@
+<!--
+  ~ template.xml 2018.05.02
+  ~
+  ~ Copyright 2018 NAVER Corp. All rights Reserved.
+  ~ NAVER PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+  -->
+
+<template format="4"
+          revision="1"
+          name="SVC Fragment with Usecase"
+          description="Creates a new SVC classes for fragment with usecase">
+
+    <category value="SVC"/>
+    <formfactor value="Mobile"/>
+
+    <parameter id="className"
+               name="Fragment Name"
+               type="string"
+               constraints="class|unique|nonempty"
+               default="FragmentName"
+               help="The name of the screen"/>
+
+    <parameter
+            id="fragmentLayoutName"
+            name="Fragment Layout Name"
+            type="string"
+            constraints="layout|unique|nonempty"
+            suggest="fragment_${classToResource(className)}"
+            default="fragment_custom"
+            help="The name of the layout to create for the fragment"/>
+
+    <parameter
+            id="USER"
+            name="authorName"
+            constraints="unique|nonempty"
+            default=""
+            help="Enter author name"
+            type="string"/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe_fragment.xml.ftl"/>
+</template>

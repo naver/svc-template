@@ -1,0 +1,42 @@
+<!--
+  ~ template.xml 2018.05.02
+  ~
+  ~ Copyright 2018 NAVER Corp. All rights Reserved.
+  ~ NAVER PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+  -->
+
+<template format="4"
+          revision="1"
+          name="SVC Activity"
+          description="Creates a new SVC classes for activity">
+
+    <category value="SVC"/>
+    <formfactor value="Mobile"/>
+
+    <parameter id="className"
+               name="Activity Name"
+               type="string"
+               constraints="class|unique|nonempty"
+               default="ActivityName"
+               help="The name of the Screen"/>
+
+    <parameter
+            id="activityLayoutName"
+            name="Activity Layout Name"
+            type="string"
+            constraints="layout|unique|nonempty"
+            suggest="activity_${classToResource(className)}"
+            default="activity_custom"
+            help="The name of the layout to create for the activity"/>
+
+    <parameter
+            id="USER"
+            name="authorName"
+            constraints="unique|nonempty"
+            default=""
+            help="Enter author name"
+            type="string"/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe_activity.xml.ftl"/>
+</template>
