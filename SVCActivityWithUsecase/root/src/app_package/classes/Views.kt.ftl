@@ -5,7 +5,7 @@ import com.naver.android.svc.core.views.UseCaseViews
 /**
  * @author ${USER}
  */
-class ${className}Views(owner: ${className}Activity): UseCaseViews<${className}Activity, ${className}UseCase>(owner) {
+class ${className}Views(screen: ${className}Activity): UseCaseViews<${className}Activity, ${className}UseCase>(screen) {
 
     override val layoutResId: Int
             get() = R.layout.${activityLayoutName}

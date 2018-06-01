@@ -1,11 +1,11 @@
 package ${packageName}
 
-import com.naver.android.svc.core.views.SvcBaseViews
+import com.naver.android.svc.core.views.SvcViews
 
 /**
  * @author ${USER}
  */
-class ${className}Views(owner: ${className}Activity): SvcBaseViews<${className}Activity>(owner) {
+class ${className}Views(screen: ${className}Activity): SvcViews<${className}Activity>(screen) {
 
     override val layoutResId: Int
             get() = R.layout.${activityLayoutName}

@@ -1,11 +1,11 @@
 package ${packageName}
 
-import com.naver.android.svc.core.views.SvcBaseViews
+import com.naver.android.svc.core.views.SvcViews
 
 /**
  * @author ${USER}
  */
-class ${className}Views(owner: ${className}Fragment): SvcBaseViews<${className}Fragment>(owner) {
+class ${className}Views(screen: ${className}Fragment): SvcViews<${className}Fragment>(screen) {
 
     override val layoutResId: Int
             get() = R.layout.${fragmentLayoutName}

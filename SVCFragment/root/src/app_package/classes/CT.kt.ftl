@@ -1,11 +1,11 @@
 package ${packageName}
 
-import com.naver.android.svc.core.SvcBaseCT
+import com.naver.android.svc.core.SvcCT
 
 /**
  * @author ${USER}
  */
-class ${className}CT(owner: ${className}Fragment, views: ${className}Views) : SvcBaseCT<${className}Fragment, ${className}Views>(owner, views) {
+class ${className}CT(screen: ${className}Fragment, views: ${className}Views) : SvcCT<${className}Fragment, ${className}Views>(screen, views) {
 
     override fun onCreated() {
     }
