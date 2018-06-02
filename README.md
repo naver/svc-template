@@ -7,9 +7,23 @@
 
 ## How to use
 
-1. new -> SVC -> select SVC Activity /SVC Activity with Usecase /SVC Fragment /SVC Fragment with Usecase
-2. write screen name
-3. finish
+ 1) clone `https://github.com/BansookNam/svcTemplate.git`
+
+ 2) run shell script through command line. (Terminal in mac)`./install.sh`
+
+ 3) restart Android Studio
+
+ 4) new -> SVC -> select SVC Activity /SVC Activity with Usecase /SVC Fragment /SVC Fragment with Usecase
+![svcTemplate](./doc/img/svcTemplate.png)
+
+ 5) write screen name, author then finish!
+
+![svcTemplate2](./doc/img/svcTemplate2.png)
+
+![svcTemplate3](./doc/img/svcTemplate3.png)
+
+6. **Happy coding!**
+
 
 ## Dependency
 1. the xml layout's root is constraintlayout so hope you use this layout.
