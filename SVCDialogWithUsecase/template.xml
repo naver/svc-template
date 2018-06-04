@@ -1,0 +1,42 @@
+<!--
+  ~ template.xml 2018.06.05
+  ~
+  ~ Copyright 2018 NAVER Corp. All rights Reserved.
+  ~ NAVER PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+  -->
+
+<template format="4"
+          revision="1"
+          name="SVC Dialog with Usecase"
+          description="Creates a new SVC classes for dialog with usecase">
+
+    <category value="SVC"/>
+    <formfactor value="Mobile"/>
+
+    <parameter id="className"
+               name="Dialog Name"
+               type="string"
+               constraints="class|unique|nonempty"
+               default="DialogName"
+               help="The name of the screen"/>
+
+    <parameter
+            id="dialogLayoutName"
+            name="Dialog Layout Name"
+            type="string"
+            constraints="layout|unique|nonempty"
+            suggest="dialog_${classToResource(className)}"
+            default="dialog_custom"
+            help="The name of the layout to create for the dialog"/>
+
+    <parameter
+            id="USER"
+            name="authorName"
+            constraints="unique|nonempty"
+            default=""
+            help="Enter author name"
+            type="string"/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe_dialog.xml.ftl"/>
+</template>
