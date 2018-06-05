@@ -7,8 +7,7 @@ import com.naver.android.svc.core.views.SvcViews
  */
 class ${className}Views(screen: ${className}Activity): SvcViews<${className}Activity>(screen) {
 
-    override val layoutResId: Int
-            get() = R.layout.${activityLayoutName}
+    override val layoutResId = R.layout.${activityLayoutName}
 
     override fun onCreated() {
     }

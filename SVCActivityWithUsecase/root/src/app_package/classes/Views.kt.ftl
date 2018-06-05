@@ -7,8 +7,7 @@ import com.naver.android.svc.core.views.UseCaseViews
  */
 class ${className}Views(screen: ${className}Activity): UseCaseViews<${className}Activity, ${className}UseCase>(screen) {
 
-    override val layoutResId: Int
-            get() = R.layout.${activityLayoutName}
+    override val layoutResId = R.layout.${activityLayoutName}
 
     override fun onCreated() {
     }
