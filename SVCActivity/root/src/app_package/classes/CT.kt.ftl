@@ -1,6 +1,6 @@
 package ${packageName}
 
-import com.naver.android.svc.core.SvcCT
+import com.naver.android.svc.core.controltower.SvcCT
 
 /**
  * @author ${USER}
