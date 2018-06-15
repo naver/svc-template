@@ -10,7 +10,7 @@ If you want to know about SVC and source code, click here link below.
 
 https://github.com/naver/svc
 
-
+![svcTemplate](./doc/img/SVC_LOGO_256.png)
 
 ## How to install
 
