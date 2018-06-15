@@ -1,5 +1,19 @@
+## What this project for?
+
+If you want to start your project with SVC pattern this project can save you time.
+
+It helps you to make several files which are necessary.
+
+
+
+If you want to know about SVC and source code, click here link below.
+
+https://github.com/naver/svc
+
+
 
 ## How to install
+
 1. from root of project -> command -> ./install.sh (tested on mac)
 2. restart AndroidStudio
 3. done
@@ -27,6 +41,11 @@
 
 ## Dependency
 1. the xml layout's root is constraintlayout so hope you use this layout.
+Add below into your app build.gradle
+
+```
+implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+```
 
 
 ## Reference
