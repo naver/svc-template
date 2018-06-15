@@ -1,6 +1,6 @@
 ## What this project for?
 
-If you want to start your project with SVC pattern this project can save you time.
+If you want to start your project with SVC pattern this project can **save your time**.
 
 It helps you to make several files which are necessary.
 
