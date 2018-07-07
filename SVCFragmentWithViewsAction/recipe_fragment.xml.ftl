@@ -11,5 +11,8 @@
     <instantiate from="src/app_package/classes/Views.kt.ftl"
     to="${escapeXmlAttribute(srcOut)}/${className}Views.kt" />
 
+    <instantiate from="src/app_package/classes/ViewsAction.kt.ftl"
+            to="${escapeXmlAttribute(srcOut)}/${className}ViewsAction.kt" />
+
     <open file="${srcOut}/${className}Fragment.kt"/>
 </recipe>

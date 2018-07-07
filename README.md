@@ -27,7 +27,7 @@ https://github.com/naver/svc
 
  3) restart Android Studio
 
- 4) new -> SVC -> select SVC Activity /SVC Activity with Usecase /SVC Fragment /SVC Fragment with Usecase
+ 4) new -> SVC -> select SVC Activity /SVC Activity with ViewsAction /SVC Fragment /SVC Fragment with ViewsAction
 ![svcTemplate](./doc/img/svcTemplate.png)
 
  5) write screen name, author then finish!
