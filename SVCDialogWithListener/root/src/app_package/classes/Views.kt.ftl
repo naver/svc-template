@@ -10,8 +10,8 @@ class ${className}Views: Views() {
 
     override val layoutResId = R.layout.${dialogLayoutName}
 
-    private val dialog = screen as ${className}Dialog
-    private val dialogListener = dialog.dialogListener
+    private val dialog by lazy { screen as ${className}Dialog }
+    private val dialogListener by lazy { dialog.dialogListener }
 
     override fun onCreated() {
     }
