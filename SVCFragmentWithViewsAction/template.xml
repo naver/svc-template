@@ -18,7 +18,7 @@
 <template format="4"
           revision="1"
           name="SVC Fragment with ViewsAction"
-          description="Creates a new SVC classes for fragment with usecase">
+          description="Creates a new SVC classes for fragment with viewsAction">
 
     <category value="SVC"/>
     <formfactor value="Mobile"/>
