@@ -31,17 +31,14 @@ https://github.com/naver/svc
 ![svcTemplate](./doc/img/svcTemplate.png)
 
  5) write screen name, author then click "Finish".
-
- ![svcTemplate2](./doc/img/svcTemplate2.png)
-
- ![svcTemplate3](./doc/img/svcTemplate3.png)
+![svcTemplate2](./doc/img/svcTemplate2.png)
+![svcTemplate3](./doc/img/svcTemplate3.png)
 
  You will see "Unresolved Reference" error.
 
  6) click "Build" - "Rebuild Project"
     This will create "SVC_{component}" based on annotations.
-
- ![svcTemplate4](./doc/img/svcTemplate4.png)
+![svcTemplate4](./doc/img/svcTemplate4.png)
 
  7) **Done! Happy coding!**
 
