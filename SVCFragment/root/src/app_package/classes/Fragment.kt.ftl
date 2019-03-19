@@ -1,12 +1,14 @@
 package ${packageName}
 
-import com.naver.android.svc.core.screen.SvcFragment
+import com.naver.android.annotation.RequireControlTower
+import com.naver.android.annotation.RequireViews
+import com.naver.android.annotation.SvcFragment
 
 /**
  * @author ${USER}
  */
-class ${className}Fragment : SvcFragment<${className}Views, ${className}ControlTower>() {
-
-    override fun createControlTower() = ${className}ControlTower(this, views)
-    override fun createViews() = ${className}Views()
+@SvcFragment
+@RequireViews(${className}Views::class)
+@RequireControlTower(${className}ControlTower::class)
+class ${className}Fragment : SVC_${className}Fragment(){
 }

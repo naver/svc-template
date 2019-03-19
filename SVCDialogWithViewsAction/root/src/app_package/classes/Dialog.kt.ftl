@@ -1,14 +1,18 @@
 package ${packageName}
 
-import com.naver.android.svc.core.screen.SvcDialogFragment
+import com.naver.android.annotation.RequireControlTower
+import com.naver.android.annotation.RequireListener
+import com.naver.android.annotation.RequireViews
+import com.naver.android.annotation.SvcDialogFragment
 
 /**
  * @author ${USER}
  */
-class ${className}Dialog : SvcDialogFragment<${className}Views, ${className}ControlTower, ${className}DialogListener>() {
-
-    override fun createControlTower() = ${className}ControlTower(this, views)
-    override fun createViews() = ${className}Views()
+@SvcDialogFragment
+@RequireViews(${className}Views::class)
+@RequireControlTower(${className}ControlTower::class)
+@RequireListener(${className}DialogListener::class)
+class ${className}Dialog : SVC_${className}Dialog(){
 
     companion object {
         fun newInstance(listener: ${className}DialogListener): ${className}Dialog {
@@ -17,7 +21,6 @@ class ${className}Dialog : SvcDialogFragment<${className}Views, ${className}Cont
             return dialog
         }
     }
-
 }
 
 interface ${className}DialogListener {

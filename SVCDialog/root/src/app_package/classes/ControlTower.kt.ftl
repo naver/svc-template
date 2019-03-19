@@ -1,12 +1,16 @@
 package ${packageName}
 
-import com.naver.android.svc.core.controltower.ControlTower
+import com.naver.android.annotation.ControlTower
+import com.naver.android.annotation.RequireScreen
+import com.naver.android.annotation.RequireViews
 
 /**
  * @author ${USER}
  */
-class ${className}ControlTower(screen: ${className}Dialog, views: ${className}Views) : ControlTower<${className}Dialog, ${className}Views>(screen, views) {
-
+@ControlTower
+@RequireViews(${className}Views::class)
+@RequireScreen(${className}Dialog::class)
+class ${className}ControlTower : SVC_${className}ControlTower(){
     override fun onCreated() {
     }
 }

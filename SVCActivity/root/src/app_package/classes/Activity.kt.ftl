@@ -1,12 +1,14 @@
 package ${packageName}
 
-import com.naver.android.svc.core.screen.SvcActivity
+import com.naver.android.annotation.RequireControlTower
+import com.naver.android.annotation.RequireViews
+import com.naver.android.annotation.SvcActivity
 
 /**
  * @author ${USER}
  */
-class ${className}Activity : SvcActivity<${className}Views, ${className}ControlTower>() {
-
-    override fun createControlTower() = ${className}ControlTower(this, views)
-    override fun createViews() = ${className}Views()
+@SvcActivity
+@RequireViews(${className}Views::class)
+@RequireControlTower(${className}ControlTower::class)
+class ${className}Activity : SVC_${className}Activity(){
 }

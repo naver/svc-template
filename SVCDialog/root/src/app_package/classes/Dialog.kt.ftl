@@ -1,20 +1,23 @@
 package ${packageName}
 
-import com.naver.android.svc.core.screen.SvcDialogFragment
+import com.naver.android.annotation.RequireControlTower
+import com.naver.android.annotation.RequireListener
+import com.naver.android.annotation.RequireViews
+import com.naver.android.annotation.SvcDialogFragment
 
 /**
  * @author ${USER}
  */
-class ${className}Dialog : SvcDialogFragment<${className}Views, ${className}ControlTower, Unit>() {
-
-    override fun createControlTower() = ${className}ControlTower(this, views)
-    override fun createViews() = ${className}Views()
-
+@SvcDialogFragment
+@RequireViews(${className}Views::class)
+@RequireControlTower(${className}ControlTower::class)
+@RequireListener(Unit::class)
+class ${className}Dialog : SVC_${className}Dialog(){
     companion object {
-        fun newInstance(): ${className}Dialog {
-            val dialog = ${className}Dialog()
-            dialog.dialogListener = Unit
-            return dialog
+            fun newInstance(): ${className}Dialog {
+                val dialog = ${className}Dialog()
+                dialog.dialogListener = Unit
+                return dialog
+            }
         }
-    }
 }
