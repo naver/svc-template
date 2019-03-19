@@ -32,7 +32,7 @@ https://github.com/naver/svc
 
  5) write screen name, author then click "Finish".
 ![svcTemplate2](./doc/img/svcTemplate2.png)
-![svcTemplate3](./doc/img/svcTemplate3.png)
+![svcTemplate3](./doc/img/svcTemplate3.png)<br/>
  You will see "Unresolved Reference" error.
 
  6) click "Build" - "Rebuild Project"
