@@ -30,13 +30,20 @@ https://github.com/naver/svc
  4) new -> SVC -> select SVC Activity /SVC Activity with ViewsAction /SVC Fragment /SVC Fragment with ViewsAction
 ![svcTemplate](./doc/img/svcTemplate.png)
 
- 5) write screen name, author then finish!
+ 5) write screen name, author then click "Finish".
 
-![svcTemplate2](./doc/img/svcTemplate2.png)
+ ![svcTemplate2](./doc/img/svcTemplate2.png)
 
-![svcTemplate3](./doc/img/svcTemplate3.png)
+ ![svcTemplate3](./doc/img/svcTemplate3.png)
 
-6. **Happy coding!**
+ You will see "Unresolved Reference" error.
+
+ 6) click "Build" - "Rebuild Project"
+    This will create "SVC_{component}" based on annotations.
+
+ ![svcTemplate4](./doc/img/svcTemplate4.png)
+
+ 7) **Done! Happy coding!**
 
 
 ## Dependency
@@ -44,7 +51,7 @@ https://github.com/naver/svc
 Add below into your app build.gradle
 
 ```
-implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+implementation 'androidx.constraintlayout:constraintlayout:1.1.3' //or above
 ```
 
 
