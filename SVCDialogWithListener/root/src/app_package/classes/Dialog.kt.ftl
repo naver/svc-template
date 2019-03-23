@@ -1,9 +1,9 @@
 package ${packageName}
 
-import com.naver.android.annotation.RequireControlTower
-import com.naver.android.annotation.RequireListener
-import com.naver.android.annotation.RequireViews
-import com.naver.android.annotation.SvcDialogFragment
+import com.naver.android.svc.annotation.RequireControlTower
+import com.naver.android.svc.annotation.RequireListener
+import com.naver.android.svc.annotation.RequireViews
+import com.naver.android.svc.annotation.SvcDialogFragment
 import com.naver.android.svc.core.controltower.EmptyControlTower
 
 /**
