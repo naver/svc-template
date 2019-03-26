@@ -18,14 +18,22 @@
 #!/bin/bash
 # Installs IntelliJ templates
 
+mkdir -p ~/.android/templates/other/
+
 echo "Installing template files..."
 
-find /Applications -path "*.app" -prune \( -name "*Android Studio 3.3*" -or -name "*IntelliJ IDEA*" \) -print0 | while read -d $'\0' folder
-do
-  echo "\nInstalling to $folder"
-  cp -frv $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/SVC* "$folder/Contents/plugins/android/lib/templates/activities/"
-done
+copyTemplate(){
 
+case "$1" in
+  *SVC*)
+  cp -r ./$1 ~/.android/templates/other/$1
+  echo "copy $1"
+esac
+}
+
+for d in */ ; do
+  copyTemplate "$d"
+done
 
 echo "Done."
 echo ""
