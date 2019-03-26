@@ -14,7 +14,26 @@ https://github.com/naver/svc
 
 ## How to install
 
-1. from root of project -> command -> ./install.sh (tested on mac)
+1. #### For Mac:
+
+   - If you have a standard Android Studio installation:
+
+   Just run the install script at the root of this repository:
+
+   ```
+   ./install.sh
+   ```
+
+   - Manual installation:
+
+   Just copy directories `***Template` to 
+
+   `~/.android/templates/other/`
+
+   #### For Windows:
+
+   Just copy directories `***Template` to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
+
 2. restart AndroidStudio
 3. done
 
@@ -44,15 +63,14 @@ https://github.com/naver/svc
 Add below into your app build.gradle
 
 ```
-implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+implementation 'androidx.constraintlayout:constraintlayout:1.1.3' //or above
 ```
 
 
 ## Reference
 
-```
 https://github.com/riggaroo/android-studio-group-templates-mvp
-```
+https://github.com/vsay01/Android-Studio-MVP-Template-Google-Architecture
 
 
 ## License
