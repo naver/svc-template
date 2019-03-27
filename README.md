@@ -26,13 +26,13 @@ https://github.com/naver/svc
 
    - Manual installation:
 
-   Just copy directories `***Template` to 
+   Just copy directories `SVC***` to 
 
    `~/.android/templates/other/`
 
    #### For Windows:
 
-   Just copy directories `***Template` to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
+   Just copy directories `SVC***` to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
 
 2. restart AndroidStudio
 
