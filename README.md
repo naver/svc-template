@@ -73,7 +73,7 @@ implementation 'androidx.constraintlayout:constraintlayout:1.1.3' //or above
 
 ## Reference
 
-https://github.com/riggaroo/android-studio-group-templates-mvp
+https://github.com/riggaroo/android-studio-group-templates-mvp <br/>
 https://github.com/vsay01/Android-Studio-MVP-Template-Google-Architecture
 
 
