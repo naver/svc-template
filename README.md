@@ -1,6 +1,6 @@
 ## What this project for?
 
-If you want to start your project with SVC pattern this project can **save your time**.
+If you want to start your project with SVC pattern this project will **save your time**.
 
 It helps you to make several files which are necessary.
 
@@ -41,7 +41,7 @@ https://github.com/naver/svc
 
 ## How to use
 
- 1) clone `https://github.com/BansookNam/svcTemplate.git`
+ 1) clone `https://github.com/naver/svc-template.git`
 
  2) run shell script through command line. (Terminal in mac)`./install.sh`
 
