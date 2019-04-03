@@ -1,5 +1,6 @@
 package ${packageName}
 
+import ${applicationPackage}.R
 import com.naver.android.svc.core.views.Views
 
 /**
