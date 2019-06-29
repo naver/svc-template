@@ -1,3 +1,11 @@
+# :no_entry: Deprecated
+
+It will be sustained on git below.
+
+https://github.com/BansookNam/svc-template
+
+
+
 ## What this project for?
 
 If you want to start your project with SVC pattern this project will **save your time**.
